@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<EmployeeList />} />
         <Route path="/add-edit/:id" element={<AddEditEmployee />} />
         <Route path="/view/:id" element={<ViewEmployee />} />
+        <Route path="*" element={<EmployeeList />} />
       </Routes>
     </Router>
   );
